@@ -23,6 +23,7 @@ class CreateMoviesTable extends Migration
                     ->on('authors')
                     ->onDelete('cascade')
                     ->onUpdate('cascade');
+            $table->timestamps();
         });
     }
 
